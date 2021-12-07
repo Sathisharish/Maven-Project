@@ -49,11 +49,12 @@ public class Runner_Class extends Base_Class {
 		action("lc", pom.getInstanceMa().getWomen());
 
 		sleep(8000);
-		jsclick(pom.getInstanceD().getPlus());
-		jsclick(pom.getInstanceD().getEveningdresses());
+		js("click", pom.getInstanceD().getPlus());
+		js("click", pom.getInstanceD().getEveningdresses());
+	
 
 		sleep(15000);
-		jsclick(pom.getInstanceCp().getColor());
+		js("click", pom.getInstanceCp().getColor());
 
 		sleep(15000);
 
@@ -100,7 +101,7 @@ public class Runner_Class extends Base_Class {
 		screenShot("order placed base");
 
 		sleep(5000);
-		quit();
+		quit("quit");
 
 	}
 
