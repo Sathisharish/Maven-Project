@@ -10,7 +10,13 @@ public class MyAccount {
 	public WebDriver driver;
 	
 	@FindBy (xpath = "//a[@title='Women']")
-	WebElement women;
+	private WebElement women;
+	
+	@FindBy (xpath ="(//a[text()='T-shirts'])[2]" )
+	private WebElement tShirt;
+	
+	@FindBy (xpath = "(//a[text()='Dresses'])[2]")
+	private WebElement dresses;
 
 	public MyAccount(WebDriver driver2) {
 		this.driver=driver2;
@@ -20,6 +26,16 @@ public class MyAccount {
 	public WebElement getWomen() {
 		return women;
 	}
+
+
+	public WebElement gettShirt() {
+		return tShirt;
+	}
 	
+
+	public WebElement getDresses() {
+		return dresses;
+	}
+
 	
 }

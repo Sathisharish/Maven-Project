@@ -9,17 +9,25 @@ public class ColorPick {
 
 	public WebDriver driver;
 
-	@FindBy(xpath = "(//a[@class='color_pick'])[2]")
-	WebElement color;
+	@FindBy(xpath = "(//a[@class='color_pick'])[1]")
+	private WebElement color1;
+	
+	
 
+	@FindBy(xpath = "(//a[@class='color_pick'])[2]")
+	private WebElement color2;
+	
 	public ColorPick(WebDriver driver2) {
 
 		this.driver = driver2;
 		PageFactory.initElements(driver, this);
 	}
+	public WebElement getColor1() {
+		return color1;
+	}
 
-	public WebElement getColor() {
-		return color;
+	public WebElement getColor2() {
+		return color2;
 	}
 
 }

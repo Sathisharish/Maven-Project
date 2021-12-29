@@ -4,12 +4,20 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -59,7 +67,7 @@ public class Base_Class {
 
 		} else if (type.equalsIgnoreCase("edge")) {
 
-			System.setProperty("webdriver.edge.driver.", System.getProperty("user.dir") + "\\driver\\edgedriver.exe");
+			System.setProperty("webdriver.edge.driver.", System.getProperty("user.dir") + "\\driver\\msedgedriver.exe");
 
 			driver = new EdgeDriver();
 
@@ -104,6 +112,13 @@ public class Base_Class {
 		element.click();
 
 	}
+	// ----------------------CLEAR-------------------------------------------------
+
+		public static void clear(WebElement element) {
+
+			element.clear();
+
+		}
 
 	// ----------------------SENDKEYS-------------------------------------------------
 
@@ -186,6 +201,14 @@ public class Base_Class {
 		}
 
 	}
+	
+	public static void jsInput(String input,WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeScript("arguments[0].value='"+input+"';", element);
+
+	}
+	
 
 	// ----------------------SELECT METHODS-------------------------------------------------
 
@@ -349,25 +372,26 @@ public class Base_Class {
 	}
 
 	// ----------------------GET METHODS----------------------------------------------
-
-	public static void driverGet(String type) {
+	public static String string;
+	public static String driverGet(String type) {
 
 		if (type.equalsIgnoreCase("url")) {
-			String url = driver.getCurrentUrl();
-			System.out.println(url);
+			string = driver.getCurrentUrl();
+			System.out.println(string);
 		} else if (type.equalsIgnoreCase("title")) {
 
-			String title = driver.getTitle();
-			System.out.println(title);
+			string = driver.getTitle();
+			System.out.println(string);
 		} else if (type.equalsIgnoreCase("window")) {
-			String windowHandle = driver.getWindowHandle();
-			System.out.println(windowHandle);
+			string = driver.getWindowHandle();
+			System.out.println(string);
 		} else if (type.equalsIgnoreCase("windows")) {
-			Set<String> windowHandle = driver.getWindowHandles();
-			for (String string : windowHandle) {
-				System.out.println(string);
+			Set<String> string = driver.getWindowHandles();
+			for (String string1 : string) {
+				System.out.println(string1);
 			}
 		}
+		return string;
 
 	}
 
@@ -391,6 +415,45 @@ public class Base_Class {
 
 		driver.switchTo().window(window);
 
+	}
+	
+	// ----------------------DATA DRIVEN----------------------------------------------
+
+	public static String value;
+	
+	public static String dataDriven(String fileLocation,String type,String s ,int rowIndex,int cellIndex) throws IOException {
+		
+		File f = new File(fileLocation);
+		
+		FileInputStream fis = new FileInputStream(f);
+		
+		Workbook w = new XSSFWorkbook(fis);
+
+		if (type.equalsIgnoreCase("particulardata")) {
+
+			Cell cell = w.getSheet(s).getRow(rowIndex).getCell(cellIndex);
+			
+			CellType cellType = cell.getCellType();
+			
+			if (cellType.equals(CellType.STRING)) {
+				
+				value = cell.getStringCellValue();
+				
+			}
+			else if (cellType.equals(CellType.NUMERIC)) {
+				
+				double cellValue = cell.getNumericCellValue();
+				
+			//	int cellvalue = (int) cellValue;
+				
+				value = String.valueOf(cellValue);
+				
+				
+			}
+				
+		}
+		return value;
+		
 	}
 
 }

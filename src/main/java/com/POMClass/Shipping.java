@@ -9,10 +9,10 @@ public class Shipping {
 	
 	public WebDriver driver;
 	
-	@FindBy (id = "uniform-cgv" )
+	@FindBy (xpath = "//input[@type='checkbox']" )
 	WebElement checkbox;
 	
-	@FindBy (xpath = "(//span[contains(text(),'Proceed to checkou')])[2]")
+	@FindBy (xpath = "(//span[contains(text(),'Proceed to checkout')])[2]")
 	WebElement checkout;
 
 	public Shipping(WebDriver driver2) {

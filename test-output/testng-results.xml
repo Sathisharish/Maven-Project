@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="6" passed="0" failed="0" skipped="5">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-28T18:08:22 IST" name="Suite" finished-at="2021-12-28T18:08:23 IST" duration-ms="151">
+    <groups>
+      <group name="dresses">
+        <method signature="TestNgRunner.women()[pri:-1, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" name="women" class="com.TestNG_RunnerClass.TestNgRunner"/>
+        <method signature="TestNgRunner.dresses()[pri:3, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" name="dresses" class="com.TestNG_RunnerClass.TestNgRunner"/>
+      </group> <!-- dresses -->
+      <group name="Tops">
+        <method signature="TestNgRunner.blouses()[pri:7, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" name="blouses" class="com.TestNG_RunnerClass.TestNgRunner"/>
+      </group> <!-- Tops -->
+    </groups>
+    <test started-at="2021-12-28T18:08:22 IST" name="Test" finished-at="2021-12-28T18:08:23 IST" duration-ms="151">
+      <class name="com.TestNG_RunnerClass.TestNgRunner">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:22 IST" name="browserLaunch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695102967" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method is-config="true" signature="urlLaunch()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="urlLaunch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103024" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method is-config="true" signature="signIn()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="signIn" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103053" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="signIn()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="signIn" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103053" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="signIn()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="signIn" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103053" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="women()[pri:-1, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="women" finished-at="2021-12-28T18:08:23 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- women -->
+        <test-method signature="dresses()[pri:3, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="dresses" finished-at="2021-12-28T18:08:23 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dresses -->
+        <test-method signature="blouses()[pri:7, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="blouses" finished-at="2021-12-28T18:08:23 IST" duration-ms="1" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blouses -->
+        <test-method is-config="true" signature="signOut()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="signOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103069" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOut -->
+        <test-method is-config="true" signature="signOut()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="signOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOut -->
+        <test-method is-config="true" signature="signOut()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="signOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103083" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOut -->
+        <test-method is-config="true" signature="signIn()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="signIn" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103084" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="blouses()[pri:7, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="blouses" finished-at="2021-12-28T18:08:23 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
+in C:\Users\heman\eclipse-workspace\RunnerClass_MiniProject\TestNG XML File\testNg parallel.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blouses -->
+        <test-method is-config="true" signature="signOut()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="signOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103090" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOut -->
+        <test-method signature="womenTshirt()[pri:2, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="womenTshirt" finished-at="2021-12-28T18:08:23 IST" depends-on-methods="com.TestNG_RunnerClass.TestNgRunner.blouses" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgRunner.womenTshirt()[pri:2, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgRunner.womenTshirt()[pri:2, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- womenTshirt -->
+        <test-method is-config="true" signature="logOutValidate()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="logOutValidate" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103102" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutValidate -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.TestNG_RunnerClass.TestNgRunner@1b11171f]" started-at="2021-12-28T18:08:23 IST" name="browserClose" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1640695103105" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- com.TestNG_RunnerClass.TestNgRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

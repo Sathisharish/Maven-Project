@@ -13,6 +13,7 @@ import com.POMClass.MyAccount;
 import com.POMClass.OrderConfirmation;
 import com.POMClass.Payment;
 import com.POMClass.Shipping;
+import com.POMClass.SignOutPage;
 import com.POMClass.SigninPage;
 import com.POMClass.Summary;
 
@@ -33,6 +34,9 @@ public class PageObjectManager {
 	private Payment p;
 	private OrderConfirmation oc;
 	private Confirm c;
+	private SignOutPage so;
+
+	
 
 	public PageObjectManager(WebDriver driver2) {
 		this.driver = driver2;
@@ -58,6 +62,16 @@ public class PageObjectManager {
 		return sp;
 	}
 
+	public SignOutPage getInstanceSo() {
+
+		if (so == null) {
+
+			so = new SignOutPage(driver);
+		}
+
+		return so;
+
+	}
 	public MyAccount getInstanceMa() {
 
 		if (ma == null) {

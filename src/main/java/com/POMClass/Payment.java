@@ -12,6 +12,13 @@ public class Payment {
 	
 	@FindBy (xpath="//a[@title='Pay by bank wire']")
 	WebElement paymentmode;
+	
+	@FindBy (xpath = "//a[@title='Pay by check.']")
+	private WebElement payByCheck;
+
+	public WebElement getPayByCheck() {
+		return payByCheck;
+	}
 
 	public Payment(WebDriver driver2) {
 

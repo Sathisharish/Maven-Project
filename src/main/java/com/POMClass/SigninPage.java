@@ -11,13 +11,13 @@ public class SigninPage {
 	
 	
 	@FindBy(id="email")
-	WebElement email;
+	private WebElement email;
 	
 	@FindBy(id = "passwd")
-	WebElement psw;
+	private WebElement psw;
 	
 	@FindBy (xpath="//i[@class='icon-lock left']")
-	WebElement sigin;
+	private WebElement sigin;
 
 	public SigninPage(WebDriver driver2) {
 			this.driver= driver2;
