@@ -9,8 +9,11 @@
           <include name="urlLaunch"/>
           <include name="dresses"/>
           <include name="signOut"/>
+          <include name="women"/>
+          <include name="blouses"/>
           <include name="browserLaunch"/>
           <include name="browserClose"/>
+          <include name="womenTshirt"/>
           <include name="signIn"/>
         </methods>
       </class> <!-- com.TestNG_RunnerClass.TestNgRunner -->
