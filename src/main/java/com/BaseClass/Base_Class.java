@@ -67,7 +67,7 @@ public class Base_Class {
 
 		} else if (type.equalsIgnoreCase("edge")) {
 
-			System.setProperty("webdriver.edge.driver.", System.getProperty("user.dir") + "\\driver\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver.", System.getProperty("user.dir") + "\\driver\\edgedriver.exe");
 
 			driver = new EdgeDriver();
 
@@ -125,6 +125,13 @@ public class Base_Class {
 	public static void input(WebElement element, String input) {
 
 		element.sendKeys(input);
+
+	}
+	
+	public static void jsInput(String input, WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		js.executeScript("arguments[0].value='" + input + "';", element);
 
 	}
 
@@ -201,14 +208,6 @@ public class Base_Class {
 		}
 
 	}
-	
-	public static void jsInput(String input,WebElement element) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		
-		js.executeScript("arguments[0].value='"+input+"';", element);
-
-	}
-	
 
 	// ----------------------SELECT METHODS-------------------------------------------------
 
@@ -372,26 +371,27 @@ public class Base_Class {
 	}
 
 	// ----------------------GET METHODS----------------------------------------------
-	public static String string;
-	public static String driverGet(String type) {
 
+	public static String driverGet(String type) {
+		
+		String str = null;
 		if (type.equalsIgnoreCase("url")) {
-			string = driver.getCurrentUrl();
-			System.out.println(string);
+			str = driver.getCurrentUrl();
+			System.out.println(str);
 		} else if (type.equalsIgnoreCase("title")) {
 
-			string = driver.getTitle();
-			System.out.println(string);
+			str  = driver.getTitle();
+			System.out.println(str);
 		} else if (type.equalsIgnoreCase("window")) {
-			string = driver.getWindowHandle();
-			System.out.println(string);
+			str = driver.getWindowHandle();
+			System.out.println(str);
 		} else if (type.equalsIgnoreCase("windows")) {
-			Set<String> string = driver.getWindowHandles();
-			for (String string1 : string) {
-				System.out.println(string1);
+			Set<String> windowHandle = driver.getWindowHandles();
+			for (String string : windowHandle) {
+				System.out.println(string);
 			}
 		}
-		return string;
+		return str;
 
 	}
 
@@ -444,9 +444,9 @@ public class Base_Class {
 				
 				double cellValue = cell.getNumericCellValue();
 				
-			//	int cellvalue = (int) cellValue;
+				int cellvalue1 = (int) cellValue;
 				
-				value = String.valueOf(cellValue);
+				value = String.valueOf(cellvalue1);
 				
 				
 			}
